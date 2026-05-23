@@ -1,0 +1,23 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body style="font-family:Arial;text-align:center;">
+
+    <h1>Prediction Result</h1>
+
+    <h2>Future Prediction: {{ prediction }}</h2>
+
+    <h3>Model Accuracy: {{ accuracy }}%</h3>
+
+    <img src="/{{ graph }}" width="600">
+
+    <br><br>
+
+    <a href="/">Go Back</a>
+
+</body>
+</html>

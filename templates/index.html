@@ -1,0 +1,46 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictive Analytics</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:100px;
+        }
+
+        .box{
+            width:400px;
+            margin:auto;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        button{
+            background:blue;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Predictive Analytics Using Historical Data</h1>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+</div>
+
+</body>
+</html>
